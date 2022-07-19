@@ -1,0 +1,102 @@
+<?php
+    header('content-type:text/css;charset:UTF8');
+?>
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    width:1260px;
+    display:grid;
+    grid-template-rows:10% 90%;
+    height:650px;
+    border:1px solid;
+    background-image: linear-gradient(to right,aqua,white);
+}
+.sub-container{
+    position:relative;
+    left:300px;
+    top:20px;
+    width:700px;
+    height:550px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display:grid;
+    grid-template-rows:41% 59%;
+    padding: 15px;
+    background-image: linear-gradient(to right,blue,aqua);
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+form{
+    width:685px;
+    height:535px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    position:relative;
+    left:145px;
+    top:20px;
+    padding: 15px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    background-image: linear-gradient(to right,aqua,blue);
+}
+.sub-container form input{
+    border: 2px solid #3498db;
+    height: 15px;
+    width: 250px;
+    margin: 10px;
+    padding: 6px;
+    transition: 0.25s;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -ms-transition: 0.25s;
+    -o-transition: 0.25s;
+}
+.sub-container form input:focus{
+    width: 400px;
+}
+.sub-container form input[type="file"]{
+    height: 30px;
+    width: 300px;
+    margin: 10px;
+    padding: 6px;
+    border-radius: 15px;
+    border: 0px;
+}
+.sub-container form input[type="button"]{
+    height: 50px;
+    width: 100px;
+    background-color: whitesmoke;
+    position: relative;
+    left: 200px;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+}
+.sub-container form input[type="button"]:hover{
+    background-image:linear-gradient(to right, blue,aqua);
+}
+@media only screen and (max-width: 1536px){
+
+    .sub-container{
+        width: 1000px;
+        height: 600px;
+    }
+    .main-container{
+        width: 1528px;
+        height: 750px;
+    }
+}
